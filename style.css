@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+  color: rgb(231, 231, 231);
+   justify-content: center;
+   justify-content: center;
+   flex-direction: column;
+   display: flex;
+  /* height: 100vh; */
+  padding-top: 200px;
+ background: #002227; 
+ /*  */
+}
+.container{
+   width: 95%;
+    margin: auto;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin:  25px 0;
+}
+.nav h2{
+    font-size: 2rem;
+    align-items: center;
+    margin-left: 35%;
+}
+.user-input{
+    
+    width:  550px;
+    text-align: center;
+   
+}
+.user-input input{
+    width: 80%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+} 
+.user-input input:focus{
+    box-shadow: 0 0 5px #03ddffcb;
+    border: 1px solid #020303cb ;
+}
+.user-input button{
+    cursor: pointer;
+    padding: 8px;
+    width: fit-content;
+    transition: 0s;
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 253, 253);
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.user-input button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.to-do-items{
+    width: 500px;
+    margin: auto;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border-radius: 2px;
+    padding: 16px;
+    color: white;
+    margin-top: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+
+}
+
+.item:hover{
+    box-shadow: 0 0 20px #030303cb;
+    border: 1px solid #020607cb ;
+    color: white;
+}
+.item i{
+    cursor: pointer;
+    margin: 0 5px;
+}
+@media(max-width:1380px){
+    .container{width: 100%;}
+  }
+  
+  @media(max-width:1380px){
+    .container{width: 50%;}
+    
+  }
+  
+  @media(max-width:480px){
+    .user_input input{width: 74%;}
+  }
+  
+  @media(max-width:320px){
+    .user_input input{width: 60%;}
+  }
+
+li{
+    
+    /* border: 1px solid rgb(189, 186, 186); */
+    width: 300px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+
+    
+}
+
+.btn{
+
+    margin: auto;
+    width: 90%;
+    text-align: center;
+    margin-bottom: 2px;
+    /* background-color: white; */
+    border-radius: 3px;
+
+    /* background-color: rgb(216, 214, 214); */
+}
+
+#dltbtn{
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 2px;
+    margin-left: 1px;
+    color:rgb(0, 0, 0);
+   
+}
+
+#dltbtn:hover,#deleteAll:hover{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+   
+    
+}
+
+#edbtn:hover,#Add:hover{
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+
+}
+
+#edbtn{
+    border: 1px solid rgb(0, 0, 0);
+    color:rgb(0, 0, 0);
+
+}
+
+#deleteAll,#Add{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+   
+}
